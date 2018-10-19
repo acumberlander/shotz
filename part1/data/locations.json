@@ -1,0 +1,53 @@
+{
+    "locations": [
+        {
+            "location image": "https://media-cdn.tripadvisor.com/media/photo-w/0e/7f/00/ff/parthenon.jpg",
+            "name": "Parthenon",
+            "location address": "2500 West End Ave, Nashville, TN 37203",
+            "shoot time": "Morning"
+        },
+        {
+            "location image": "https://reliantrealty.com/wp-content/uploads/2017/11/Broadway_1000.jpg",
+            "name": "Broadway",
+            "location address": "Broadway, Nashville, TN",
+            "shoot time": "After Dark"
+        },
+        {
+            "location image": "https://s3-media2.fl.yelpcdn.com/bphoto/D5jG56cgKlf3tpU-viKqyA/o.jpg",
+            "name": "Frist Art Museum",
+            "location address": "919 Broadway, Nashville, TN 37203",
+            "shoot time": "Evening"
+        },
+        {
+            "location image": "https://assets.pixelflyte.com/images/work/cheekwood-featured.jpg",
+            "name": "Cheekwood Estate & Gardens",
+            "location address": "1200 Forrest Park Dr, Nashville, TN 37205",
+            "shoot time": "After Dark"
+        },
+        {
+            "location image": "https://media.timesfreepress.com/img/photos/2013/10/30/1031_WEB_b_Haunted_Capitol_t800_haf4cbd95c5ee4da8c27fbc8fc4e1fe90b43382da.JPG",
+            "name": "Tennessee State Capitol",
+            "location address": "600 Charlotte Ave, Nashville, TN 37243",
+            "shoot time": "Afternoon"
+        },
+        {
+            "location image": "",
+            "name": "place",
+            "location address": "the address",
+            "shoot time": "Evening"
+        },
+        {
+            "location image": "",
+            "name": "place",
+            "location address": "the address",
+            "shoot time": "Morning"
+        },
+        {
+            "location image": "",
+            "name": "place",
+            "location address": "the address",
+            "shoot time": "Morning"
+        }
+    ]
+
+}
