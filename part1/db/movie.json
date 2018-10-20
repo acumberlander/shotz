@@ -1,0 +1,11 @@
+{
+    "movies": [
+        {
+            "image": "https://cdn.vox-cdn.com/thumbor/Q1QAVWgd1xBH-PAKjf672Z3iM-Q=/0x0:630x394/1200x800/filters:focal(265x147:365x247)/cdn.vox-cdn.com/uploads/chorus_image/image/57822053/56ab5c101f00005000216e6d.0.jpeg",
+            "title": "The Room",
+            "year": "2003",
+            "genre": "Indie",
+            "description": "Johnny is a successful banker who lives happily in a San Francisco townhouse with his fiancée, Lisa. One day, inexplicably, she gets bored with him and decides to seduce his best friend, Mark. From there, nothing will be the same again."
+        }
+    ]
+}
