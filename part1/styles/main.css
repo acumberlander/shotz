@@ -1,0 +1,22 @@
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-pics {
+    width: 336px;
+    height: 400px;
+}
+
+.card-body {
+    width: 434px;
+    height: 667px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 25%;
+}
+
+/* .container {
+    align-items: center;
+    word-wrap: break-word;
+} */

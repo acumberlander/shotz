@@ -3,49 +3,49 @@
         {
             "locationImage": "https://media-cdn.tripadvisor.com/media/photo-w/0e/7f/00/ff/parthenon.jpg",
             "name": "Parthenon",
-            "location address": "2500 West End Ave, Nashville, TN 37203",
-            "shoot time": "Morning"
+            "address": "2500 West End Ave, Nashville, TN 37203",
+            "shootTime": "Morning"
         },
         {
             "locationImage": "https://reliantrealty.com/wp-content/uploads/2017/11/Broadway_1000.jpg",
             "name": "Broadway",
-            "locationAddress": "Broadway, Nashville, TN",
-            "shoot time": "After Dark"
+            "address": "Broadway, Nashville, TN",
+            "shootTime": "After Dark"
         },
         {
             "locationImage": "https://s3-media2.fl.yelpcdn.com/bphoto/D5jG56cgKlf3tpU-viKqyA/o.jpg",
             "name": "Frist Art Museum",
-            "locationAddress": "919 Broadway, Nashville, TN 37203",
+            "address": "919 Broadway, Nashville, TN 37203",
             "shootTime": "Evening"
         },
         {
             "locationImage": "https://assets.pixelflyte.com/images/work/cheekwood-featured.jpg",
             "name": "Cheekwood Estate & Gardens",
-            "locationAddress": "1200 Forrest Park Dr, Nashville, TN 37205",
+            "address": "1200 Forrest Park Dr, Nashville, TN 37205",
             "shootTime": "After Dark"
         },
         {
             "locationImage": "https://media.timesfreepress.com/img/photos/2013/10/30/1031_WEB_b_Haunted_Capitol_t800_haf4cbd95c5ee4da8c27fbc8fc4e1fe90b43382da.JPG",
             "name": "Tennessee State Capitol",
-            "locationAddress": "600 Charlotte Ave, Nashville, TN 37243",
+            "address": "600 Charlotte Ave, Nashville, TN 37243",
             "shootTime": "Afternoon"
         },
         {
-            "locationImage": "",
-            "name": "place",
-            "locationAddress": "the address",
+            "locationImage": "https://d13b2ieg84qqce.cloudfront.net/d057d43aa715836355d70e020e2e897f256b9f95.jpg",
+            "name": "Vanderbilt University",
+            "address": "2201 West End Ave, Nashville, TN 37235",
             "shootTime": "Evening"
         },
         {
-            "locationImage": "",
-            "name": "place",
-            "locationSdAress": "the address",
+            "locationImage": "https://static1.squarespace.com/static/551ddb12e4b0548e77ecd7e8/5653a661e4b036d0d6dba123/5653a86be4b0a689b3f8b1a8/1448323185405/_W9A3507.jpg?format=1000w",
+            "name": "Acme Feed & Seed",
+            "address": "101 Broadway, Nashville, TN 37201",
             "shootTime": "Morning"
         },
         {
-            "locationImage": "",
-            "name": "place",
-            "locationAddress": "the address",
+            "locationImage": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/john-seigenthaler-pedestrian-bridge-nashville-adam-rainoff.jpg",
+            "name": "John Seigenthaler Pedestrian Bridge",
+            "address": "Nashville, TN 37213",
             "shootTime": "Morning"
         }
     ]
