@@ -14,14 +14,13 @@ const getPlacez = () => {
 const locationBuilder = (locationsArray) => {
     let domString = '';
     locationsArray.forEach((location) => {
+        domString += `<div id="wrapPer">`
         domString += `<div class= "place col-4 d-inline-block">`;
         domString += `<div class="card m-2">`;
         domString += `<img class="ml-5 mr-5 mb-2 mt-5 card-pics" src="${location.locationImage}" alt="${location.name}">`;
-        domString += `<div class= "card-header text-center" id="place"><strong>${location.name}</strong></div>`;
-        domString += `<p class="m-2 text-center" id="address">${location.address} </p>`;
+        domString += `<div class= "place-name card-header text-center"><strong>${location.name}</strong></div>`;
+        domString += `<p class="m-2 text-center">${location.address} </p>`;
         domString += `<p class="m-2 text-center">${location.shootTime}</p>`;
-        domString += `</div>`;
-        domString += `</div>`;
         domString += `</div>`;
         domString += `</div>`;
         domString += `</div>`;
@@ -89,31 +88,35 @@ const sortEvents = () => {
     afterdarkButton.addEventListener('click', sortShots);
 }
 
-const filterFunction = () => {
-    $("#search").on("keyup", () => {
-    let userInput = $('#search').val().toLowerCase();
-    let placeCards = $(".place");
-    $(placeCards).filter(() => {
-        console.log($(placeCards).toggle($(placeCards).text().toLowerCase().indexOf(userInput) > -1));
+
+    $(document).ready(function() {
+        $("#search").on("keyup", function () {
+        let value = $(this).val().toLowerCase();
+        // let placeCards = $(".place");
+        $("#wrapPer .card").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
     });
 });
-}
 
-filterFunction();
+
+// filterFunction();
 
 
 // $(card).toggle($('#place').text().toLowerCase().indexOf(userInput) > -1)
 
 
 // loading movie data
-$.get('../db/movie.json')
-.done((data) => {
-    console.log(data);
-    movieBuilder(data.movies);
-})
-.fail((error) => {
-    console.error({error});
-})
+const getMovies = () => {
+    $.get('../db/movie.json')
+    .done((data) => {
+        console.log(data);
+        movieBuilder(data.movies);
+    })
+    .fail((error) => {
+        console.error({error});
+    })
+}
 
 // loading locations data
 const getPlaces = () => {
@@ -129,6 +132,7 @@ const getPlaces = () => {
 
 const initializeApp = () => {
     getPlaces();
+    getMovies();
     sortEvents();
 }
 
