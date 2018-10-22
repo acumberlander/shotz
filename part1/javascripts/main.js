@@ -6,16 +6,20 @@ const setPlaces = (newArray) => {
     places = newArray;
 }
 
+setPlaces();
+
 const getPlacez = () => {
     return places;
 }
+
+getPlacez();
 
 // location Builder for locationComponents
 const locationBuilder = (locationsArray) => {
     let domString = '';
     locationsArray.forEach((location) => {
-        domString += `<div id="wrapPer">`
-        domString += `<div class= "place col-4 d-inline-block">`;
+        domString += `<div id="wrapPer d-flex">`
+        domString += `<div class= "place col-4">`;
         domString += `<div class="card m-2">`;
         domString += `<img class="ml-5 mr-5 mb-2 mt-5 card-pics" src="${location.locationImage}" alt="${location.name}">`;
         domString += `<div class= "place-name card-header text-center"><strong>${location.name}</strong></div>`;
@@ -52,6 +56,7 @@ const movieBuilder = (moviesArray) => {
     $('#movies').append(domString);
 };
 
+
 // sorts pets according to the pet type indicated in the json file and the id of the buttons in the html file
 const sortShots = (e) => {
     // e is an event that represents whatever element it's attached to, in this case the buttons on the page
@@ -59,16 +64,16 @@ const sortShots = (e) => {
     console.log(shootTime);
     // console.log(date);
     if(shootTime === "Morning"){
-        const filteredPlaces = places.filter(x => x.shootTime === shootTime);
+        const filteredPlaces = places.filter(x => x.shootTime === `${locations.shootTime}`);
         locationBuilder(filteredPlaces);
     } else if(shootTime === "Afternoon"){
-        const filteredPlaces = places.filter(x => x.shootTime === shootTime);
+        const filteredPlaces = places.filter(x => x.shootTime === `${locations.shootTime}`);
         locationBuilder(filteredPlaces);
     } else if(shootTime === "Evening"){
-        const filteredPlaces = places.filter(x => x.shootTime === shootTime);
+        const filteredPlaces = places.filter(x => x.shootTime === `${locations.shootTime}`);
         locationBuilder(filteredPlaces);
     } else if(shootTime === "After Dark"){
-        const filteredPlaces = places.filter(x => x.shootTime === shootTime);
+        const filteredPlaces = places.filter(x => x.shootTime === `${locations.shootTime}`);
         locationBuilder(filteredPlaces);
     } else {
         locationBuilder();
@@ -88,22 +93,18 @@ const sortEvents = () => {
     afterdarkButton.addEventListener('click', sortShots);
 }
 
-
+// search filter function
+const searchFilter = () => {
     $(document).ready(function() {
         $("#search").on("keyup", function () {
         let value = $(this).val().toLowerCase();
         // let placeCards = $(".place");
         $("#wrapPer .card").filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            });
         });
     });
-});
-
-
-// filterFunction();
-
-
-// $(card).toggle($('#place').text().toLowerCase().indexOf(userInput) > -1)
+}
 
 
 // loading movie data
@@ -129,11 +130,12 @@ const getPlaces = () => {
     })
 }
 
-
+// intialize all functions in app
 const initializeApp = () => {
     getPlaces();
     getMovies();
     sortEvents();
+    searchFilter();
 }
 
 initializeApp();
