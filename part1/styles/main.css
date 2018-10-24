@@ -26,8 +26,9 @@
     width: 200px;
 }
 
-#wrapPer {
-    display: flex;
-    flex-wrap: wrap;
+#wrapPer, .card {
+    display: inline-block;
+    /* flex-wrap: wrap; */
+
     
 }

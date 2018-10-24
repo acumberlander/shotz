@@ -1,11 +1,40 @@
 {
     "movies": [
         {
-            "image": "https://cdn.vox-cdn.com/thumbor/Q1QAVWgd1xBH-PAKjf672Z3iM-Q=/0x0:630x394/1200x800/filters:focal(265x147:365x247)/cdn.vox-cdn.com/uploads/chorus_image/image/57822053/56ab5c101f00005000216e6d.0.jpeg",
+            "id": "movie1",
             "title": "The Room",
-            "date": "06/27/2003",
             "genre": "Indie",
-            "description": "Johnny is a successful banker who lives happily in a San Francisco townhouse with his fiancée, Lisa. One day, inexplicably, she gets bored with him and decides to seduce his best friend, Mark. From there, nothing will be the same again."
+            "releaseDate": "June 27, 2003",
+            "description": "Johnny is a successful banker who lives happily in a San Francisco townhouse with his fiancée, Lisa. One day, inexplicably, she gets bored with him and decides to seduce his best friend, Mark. From there, nothing will be the same again.",
+            "image": "https://cdn.vox-cdn.com/thumbor/Q1QAVWgd1xBH-PAKjf672Z3iM-Q=/0x0:630x394/1200x800/filters:focal(265x147:365x247)/cdn.vox-cdn.com/uploads/chorus_image/image/57822053/56ab5c101f00005000216e6d.0.jpeg",
+            "locations": "[location1, location2, location3, location4]"
+        },
+        {
+            "id": "movie2",
+            "title": "Avengers: Infinity War",
+            "genre": "Fantasy/Science Fiction",
+            "releaseDate": "April 27, 2018",
+            "description": "Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.",
+            "image": "https://cdn.arstechnica.net/wp-content/uploads/2018/04/aveng-infinwar-logo.jpg",
+            "locations": "[location5, location6, location7, location8]"
+        },
+        {
+            "id": "movie3",
+            "title": "Spider-Man: Homecoming",
+            "genre": "Fantasy/Science Fiction",
+            "releaseDate": "July 7, 2017",
+            "description": "Thrilled by his experience with the Avengers, young Peter Parker returns home to live with his Aunt May. Under the watchful eye of mentor Tony Stark, Parker starts to embrace his newfound identity as Spider-Man. He also tries to return to his normal daily routine -- distracted by thoughts of proving himself to be more than just a friendly neighborhood superhero. Peter must soon put his powers to the test when the evil Vulture emerges to threaten everything that he holds dear.",
+            "image": "https://www.joblo.com/assets/images/oldsite/posters/images/full/Spider-Man%20Homecoming%20banner-2.jpg",
+            "locations": "[location9, location10, location11, location12]"
+        },
+        {
+            "id": "movie4",
+            "title": "The Incredibles 2",
+            "genre": "Science Fiction/Action",
+            "releaseDate": "June 15, 2018",
+            "description": "Everyone’s favorite family of superheroes is back in “Incredibles 2” – but this time Helen (voice of Holly Hunter) is in the spotlight, leaving Bob (voice of Craig T. Nelson) at home with Violet (voice of Sarah Vowell) and Dash (voice of Huck Milner) to navigate the day-to-day heroics of “normal” life. It’s a tough transistion for everyone, made tougher by the fact that the family is still unaware of baby Jack-Jack’s emerging superpowers. When a new villain hatches a brilliant and dangerous plot, the family and Frozone (voice of Samuel L. Jackson) must find a way to work together again—which is easier said than done, even when they’re all Incredible.",
+            "image": "https://consequenceofsound.files.wordpress.com/2018/04/the-incredibles-2.png?w=807",
+            "locations": "[location13, location14, location15, location16]"
         }
     ]
 }
