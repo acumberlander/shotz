@@ -1,11 +1,7 @@
-/* #cards {
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 .card-pics {
-    width: 336px;
-    height: 400px;
+    width: 275px;
+    height: 275px;
 }
 
 /* .card-body {
@@ -21,14 +17,42 @@
     word-wrap: break-word;
 } */
 
-.img-thumbnail {
+/* .img-thumbnail {
     height: 200px;
     width: 200px;
-}
+} */
 
 #wrapPer, .card {
     display: inline-block;
-    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap; */   
+}
 
-    
+.img-card-top {
+    width: 100%;
+    height: 250px;
+    /* margin: 50px; */
+}
+
+/* .movieCards {
+    width: 350px;
+    height: 350px;
+} */
+
+#movies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conatainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

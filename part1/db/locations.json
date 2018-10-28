@@ -1,116 +1,88 @@
 {
     "locations": [
         {
-            "id": "location1",
-            "locationImage": "https://media-cdn.tripadvisor.com/media/photo-w/0e/7f/00/ff/parthenon.jpg",
-            "name": "Parthenon",
-            "address": "2500 West End Ave, Nashville, TN 37203",
+            "id": 1,
+            "locationImage": "https://www.gracecathedral.org/wp-content/uploads/2016/03/PlanYourVisit_cathedralEXT-1024x683.jpg",
+            "name": "Grace Cathedral",
+            "address": "1100 California St, San Francisco, CA 94108",
             "shootTime": "Morning"
         },
         {
-            "id": "location2",
-            "locationImage": "https://reliantrealty.com/wp-content/uploads/2017/11/Broadway_1000.jpg",
-            "name": "Broadway",
-            "address": "Broadway, Nashville, TN",
-            "shootTime": "After Dark"
-        },
-        {
-            "id": "location3",
-            "locationImage": "https://s3-media2.fl.yelpcdn.com/bphoto/D5jG56cgKlf3tpU-viKqyA/o.jpg",
-            "name": "Frist Art Museum",
-            "address": "919 Broadway, Nashville, TN 37203",
-            "shootTime": "Evening"
-        },
-        {
-            "id": "location4",
-            "locationImage": "https://assets.pixelflyte.com/images/work/cheekwood-featured.jpg",
-            "name": "Cheekwood Estate & Gardens",
-            "address": "1200 Forrest Park Dr, Nashville, TN 37205",
-            "shootTime": "After Dark"
-        },
-        {
-            "id": "location5",
-            "locationImage": "https://media.timesfreepress.com/img/photos/2013/10/30/1031_WEB_b_Haunted_Capitol_t800_haf4cbd95c5ee4da8c27fbc8fc4e1fe90b43382da.JPG",
-            "name": "Tennessee State Capitol",
-            "address": "600 Charlotte Ave, Nashville, TN 37243",
+            "id": 2,
+            "locationImage": "https://images-production.gardenvisit.com/uploads/images/15557/golden_gate_california_original.jpg",
+            "name": "Golden Gate Park",
+            "address": "201, Fort Mason San Francisco, CA 94123",
             "shootTime": "Afternoon"
         },
         {
-            "id": "location6",
-            "locationImage": "https://d13b2ieg84qqce.cloudfront.net/d057d43aa715836355d70e020e2e897f256b9f95.jpg",
-            "name": "Vanderbilt University",
-            "address": "2201 West End Ave, Nashville, TN 37235",
+            "id": 3,
+            "locationImage": "https://media-cdn.tripadvisor.com/media/photo-s/06/cc/79/20/pizza-zone.jpg",
+            "name": "Pizza Zone",
+            "address": "555 Beach St, San Francisco, CA 94133",
+            "shootTime": "Morning"
+        },
+        {
+            "id": 4,
+            "locationImage": "https://www.langan.com/wp-content/uploads/2017/08/Lyon-Street-Stairs_2-1.jpg",
+            "name": "Lyon Street Steps",
+            "address": "Broadway & Lyon St, San Francisco, CA 94115",
             "shootTime": "Evening"
         },
         {
-            "id": "location7",
-            "locationImage": "https://static1.squarespace.com/static/551ddb12e4b0548e77ecd7e8/5653a661e4b036d0d6dba123/5653a86be4b0a689b3f8b1a8/1448323185405/_W9A3507.jpg?format=1000w",
-            "name": "Acme Feed & Seed",
-            "address": "101 Broadway, Nashville, TN 37201",
-            "shootTime": "Morning"
-        },
-        {
-            "id": "location8",
-            "locationImage": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/john-seigenthaler-pedestrian-bridge-nashville-adam-rainoff.jpg",
-            "name": "John Seigenthaler Pedestrian Bridge",
-            "address": "Nashville, TN 37213",
-            "shootTime": "Morning"
-        },
-        {
-            "id": "location9",
-            "locationImage": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/john-seigenthaler-pedestrian-bridge-nashville-adam-rainoff.jpg",
-            "name": "John Seigenthaler Pedestrian Bridge",
-            "address": "Nashville, TN 37213",
-            "shootTime": "Morning"
-        },
-        {
-            "id": "location10",
-            "locationImage": "https://media-cdn.tripadvisor.com/media/photo-w/0e/7f/00/ff/parthenon.jpg",
-            "name": "Parthenon",
-            "address": "2500 West End Ave, Nashville, TN 37203",
-            "shootTime": "Morning"
-        },
-        {
-            "id": "location11",
-            "locationImage": "https://media-cdn.tripadvisor.com/media/photo-w/0e/7f/00/ff/parthenon.jpg",
-            "name": "Parthenon",
-            "address": "2500 West End Ave, Nashville, TN 37203",
-            "shootTime": "Morning"
-        },
-        {
-            "id": "location12",
-            "locationImage": "https://reliantrealty.com/wp-content/uploads/2017/11/Broadway_1000.jpg",
-            "name": "Broadway",
-            "address": "Broadway, Nashville, TN",
-            "shootTime": "After Dark"
-        },
-        {
-            "id": "location13",
-            "locationImage": "https://s3-media2.fl.yelpcdn.com/bphoto/D5jG56cgKlf3tpU-viKqyA/o.jpg",
-            "name": "Frist Art Museum",
-            "address": "919 Broadway, Nashville, TN 37203",
-            "shootTime": "Evening"
-        },
-        {
-            "id": "location14",
-            "locationImage": "https://assets.pixelflyte.com/images/work/cheekwood-featured.jpg",
-            "name": "Cheekwood Estate & Gardens",
-            "address": "1200 Forrest Park Dr, Nashville, TN 37205",
-            "shootTime": "After Dark"
-        },
-        {
-            "id": "location15",
-            "locationImage": "https://media.timesfreepress.com/img/photos/2013/10/30/1031_WEB_b_Haunted_Capitol_t800_haf4cbd95c5ee4da8c27fbc8fc4e1fe90b43382da.JPG",
-            "name": "Tennessee State Capitol",
-            "address": "600 Charlotte Ave, Nashville, TN 37243",
+            "id": 5,
+            "locationImage": "https://www.duanestreethotel.com/wp-content/uploads/2017/08/GettyImages-494607942-1.jpg",
+            "name": "Central Park",
+            "address": "New York, NY 10026",
             "shootTime": "Afternoon"
         },
         {
-            "id": "location16",
-            "locationImage": "https://d13b2ieg84qqce.cloudfront.net/d057d43aa715836355d70e020e2e897f256b9f95.jpg",
-            "name": "Vanderbilt University",
-            "address": "2201 West End Ave, Nashville, TN 37235",
+            "id": 6,
+            "locationImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/St_Giles_Cathedral_-_01.jpg/1200px-St_Giles_Cathedral_-_01.jpg",
+            "name": "St Giles' Cathedral",
+            "address": "High St, Edinburgh EH1 1RE, UK",
+            "shootTime": "After Dark"
+        },
+        {
+            "id": 7,
+            "locationImage": "https://daily.jstor.org/wp-content/uploads/2018/05/outer_space_treaty_1050x700.jpg",
+            "name": "Space",
+            "address": "101 Galaxy Lane",
+            "shootTime": "After Dark"
+        },
+        {
+            "id": 8,
+            "locationImage": "https://www.movie-locations.com/movies/c/Captain-America-Civil-War-Porsche-Atlanta.jpg",
+            "name": "Atlanta Porsche Experience Center",
+            "address": "One Porsche Drive, Atlanta, GA",
+            "shootTime": "Morning"
+        },
+        {
+            "id": 9,
+            "locationImage": "https://cdn.vox-cdn.com/thumbor/8NM25YrRvVFY_LDhw-kDDUnCY5o=/0x0:548x308/1200x800/filters:focal(231x111:317x197)/cdn.vox-cdn.com/uploads/chorus_image/image/56145693/dji_0016.0.jpg",
+            "name": "Pinewood Atlanta Studioss",
+            "address": "461 Sandy Creek Rd, Fayetteville, GA 30214",
             "shootTime": "Evening"
+        },
+        {
+            "id": 10,
+            "locationImage": "https://iowajournalist.org/sites/iowajournalist.org/files/styles/ij_slideshow/public/field/feature/image/LuxoLamp.jpg?itok=o6yuElN7",
+            "name": "Pixar Studios",
+            "address": "1200 Park Ave, Emeryville, CA 94608",
+            "shootTime": "Evening"
+        },
+        {
+            "id": 11,
+            "locationImage": "https://www.movie-locations.com/movies/s/Spider-Man-Homecoming-31st-Street-2.jpg",
+            "name": "Ditmars Blvd & 31st St",
+            "address": "Queens, NY 11105",
+            "shootTime": "Afternoon"
+        },
+        {
+            "id": 12,
+            "locationImage": "https://media-cdn.tripadvisor.com/media/photo-s/04/60/ce/9c/cafe-sofia.jpg",
+            "name": "Sofia Cafe/Anniversary Flowers",
+            "address": "3463 16th St, San Francisco, CA 94114",
+            "shootTime": "Afternoon"
         }
     ]
 }

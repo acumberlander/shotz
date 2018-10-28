@@ -1,34 +1,19 @@
-
-
-let places = [];
-
-const setPlaces = (newArray) => {
-    places = newArray;
-}
-
-const getPlacez = () => {
-    return places;
-}
-
-
 // location Builder for locationComponents
 const locationBuilder = (locationsArray) => {
     $('#cards').empty();
     let domString = '';
-    console.log("hello");
-    console.log(locationsArray);
     locationsArray.forEach((location) => {
-        domString += `<div id="wrapPer">`
-        domString += `<div class= "place col-4">`;
-        domString += `<div class="card m-2">`;
-        domString += `<img class="ml-5 mr-5 mb-2 mt-5 card-pics" src="${location.locationImage}" alt="${location.name}">`;
-        domString += `<div class= "place-name card-header text-center"><strong>${location.name}</strong></div>`;
-        domString += `<p class="m-2 text-center">${location.address} </p>`;
-        domString += `<p class="m-2 text-center">${location.shootTime}</p>`;
-        domString += `</div>`;
-        domString += `</div>`;
-        domString += `</div>`;
-        domString += `</div>`;
+        domString += `
+        <div class="wrapPer">
+            <div class="card m-2">
+                <img class="ml-5 mr-5 mb-2 mt-5 card-pics" src="${location.locationImage}" alt="${location.name}">
+                <div class="place-name card-header text-center"><strong>${location.name}</strong></div>
+                    <p class="m-2 text-center">${location.address} </p>
+                    <p class="m-2 text-center">${location.shootTime}</p>
+                </div>
+            </div>
+        </div>
+        `;
     })
     $('#cards').append(domString);
 }; 
@@ -37,61 +22,22 @@ const locationBuilder = (locationsArray) => {
 const movieBuilder = (moviesArray) => {
     let domString = '';
     moviesArray.forEach((movie) => {
-        domString += `<div class="card text-center">`
-        domString += `<div class="card-header">`
-        domString += `    <ul class="nav nav-tabs card-header-tabs">`
-        domString += `    <li class="nav-item">`
-        domString += `        <a class="nav-link active" href="#">${movie.title}</a>`
-        domString += `    </li>`
-        domString += `    </ul>`
-        domString += `</div>`
-        domString += `<div class="card-body">`
-        domString += `<img class="img-thumbnail rounded float-left m-3" src="${movie.image}" alt="${movie.title}">`
-        domString += `    <h3 class="card-title d-flex mt-3">${movie.title}</h3>`
-        domString += `    <p class="card-text d-flex">${movie.genre} | ${movie.date}</p>`
-        domString += `    <p class="card-text d-flex text-left">${movie.description}</p>`
-        domString += `</div>`
-        domString += `</div>`
+        domString += `
+        <div id="movieCards" class="wrapPer card m-3 p-2" style="width: 18rem;">
+            <img class="img-card-top" src="${movie.image}" alt="${movie.title}">
+            <h3 class="text-center card-title">${movie.title}</h3>
+            <p class="card-text">${movie.genre} | ${movie.releaseDate}</p>
+            <p class="card-text">Shooting Locations: ${movie.locations.length}</p>
+            <p class="card-text">${movie.description}</p>            
+        </div>
+        `
     })
     $('#movies').append(domString);
 };
 
 
-// sorts pets according to the pet type indicated in the json file and the id of the buttons in the html file
-// const sortShots = (times) => {
-//     // e is an event that represents whatever element it's attached to, in this case the buttons on the page
-//     console.log(times);
-//     times.forEach((time) =>{
-//         const shootTime = times.target.id;
-        
-//         if(shootTime === `${time.shootTime}`){
-//             console.log(`${time.shootTime}`);
-//         }
-//     })
-//     if(shootTime === "Morning"){
-//         console.log(places.filter(x => x.shootTime === shootTime));
-//         $('#Morning').show();
-//         $('#Evening').hide();
-//         $('#After Dark').hide();
-//     // console.log(date);
-//     // e.forEach(shot => {
-//     } else if(shootTime === "Afternoon"){
-//         const filteredPlaces = places.filter(x => x.shootTime === shootTime);
-//         locationBuilder(filteredPlaces);
-//     } else if(shootTime === "Evening"){
-//         const filteredPlaces = places.filter(x => x.shootTime === shootTime);
-//         locationBuilder(filteredPlaces);
-//     } else if(shootTime === "After Dark"){
-//         const filteredPlaces = places.filter(x => x.shootTime === shootTime);
-//         locationBuilder(filteredPlaces);
-//     } else {
-//         locationBuilder();
-//     }
-// }
-
-
 // function that creates the javascript DOM references for buttons and defines what they do. 
-const sortEvents = () => {
+const timeFilter = () => {
     const morningButton = document.getElementById('Morning');
     const afternoonButton = document.getElementById('Afternoon');
     const eveningButton = document.getElementById('Evening');
@@ -110,13 +56,22 @@ const sortEvents = () => {
     });
 }
 
+
+const movieFilter = () => {
+    $('.img-card-top').click((e)=>{
+        $(e.target).hide();
+        console.log("yo");
+    }) ;
+}
+
+
 // search filter function
 const searchFilter = () => {
     $(document).ready(function() {
         $("#search").on("keyup", function () {
         let value = $(this).val().toLowerCase();
         // let placeCards = $(".place");
-        $("#wrapPer .card").filter(function () {
+        $(".wrapPer").filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
             });
         });
@@ -126,43 +81,49 @@ const searchFilter = () => {
 
 // loading movie data
 const getMovies = () => {
-    $.get('../db/movie.json')
-    .done((data) => {
-        console.log(data);
-        movieBuilder(data.movies);
-    })
-    .fail((error) => {
-        console.error({error});
-    })
-}
+    new Promise ((resolve, reject) => {
+        $.get('../db/movie.json')
+        .done((data) => {
+            resolve(data);
+            movieBuilder(data.movies);
+        })
+        .fail((error) => {
+            reject({error});
+        })
+    }
+)}
 
 // loading locations data
 const getPlaces = (time) => {
-    console.log(time);
-    $.get('../db/locations.json')
-    .done((data) => {
-        if (time) {
-            let filteredLocations = [];
-            data.locations.forEach(location => {
-                if (location.shootTime===time) {
-                    filteredLocations.push(location);
-                }
-            })
-            locationBuilder(filteredLocations);
-        } else {
-            locationBuilder(data.locations);
-        }
-    })
-    .fail((error) => {
-        console.error({error});
+    return new Promise ((resolve, reject) => {
+        $.get('../db/locations.json')
+        .done((data) => {
+            resolve(data);
+            if (time) {
+                let filteredLocations = [];
+                data.locations.forEach(location => {
+                    if (location.shootTime===time) {
+                        filteredLocations.push(location);
+                    }
+                })
+                locationBuilder(filteredLocations);
+            } else {
+                resolve(data);
+                locationBuilder(data.locations);
+            }
+        })
+        .fail((error) => {
+            reject({error});
+        })
     })
 }
 
 // intialize all functions in app
 const initializeApp = () => {
     getPlaces(null);
+    movieFilter();
     getMovies();
-    sortEvents();
+    timeFilter();
     searchFilter();
 }
 
