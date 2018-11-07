@@ -1,7 +1,15 @@
-
+/* body {
+    background-color: navy;
+} */
+.address {
+    font-size: 11px;
+}
+.locationTitle {
+    font-size: 14px;
+}
 .card-pics {
-    width: 275px;
-    height: 275px;
+    width: 200px;
+    height: 200px;
 }
 
 /* .card-body {
@@ -51,7 +59,7 @@
     justify-content: center;
 }
 
-.conatainer {
+.container {
     display: flex;
     flex-direction: row;
     justify-content: center;

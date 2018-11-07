@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="d-flex flex-column container bg-primary">
         <div id="movies"></div>
         <div class="container">
             <span class="m-1 d-flex">
@@ -18,7 +18,7 @@
                 <button id="Morning" class="btn btn-warning m-3" type="submit">Morning</button>
                 <button id="Afternoon" class="btn btn-success m-3" type="submit">Afternoon</button>
                 <button id="Evening" class="btn btn-primary m-3" type="submit">Evening</button>
-                <button id="After Dark" class="btn btn-secondary m-3" type="submit">After Dark</button>
+                <button id="AfterDark" class="btn btn-secondary m-3" type="submit">After Dark</button>
             </span>
         </div>
         <div class="" id="cards"></div>
@@ -27,13 +27,13 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <!-- <script type="module" src="../part1/javascripts/components/locationComponents.js"></script>
-    <script type="module" src="../part1/javascripts/components/movieomponents.js"></script>
-    <script type="module" src="../part1/javascripts/data/locationsData.js"></script>
-    <script type="module" src="../part1/javascripts/data/movieData.js"></script>
-    <script type="module" src="javascripts/events.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/components/locationComponents.js"></script>
+    <script type="module" src="./javascripts/components/movieComponents.js"></script>
+    <script type="module" src="./javascripts/data/locationsData.js"></script>
+    <script type="module" src="./javascripts/data/movieData.js"></script>
+    <script type="module" src="./javascripts/events.js"></script>
     <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
